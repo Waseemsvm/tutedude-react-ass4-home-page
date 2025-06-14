@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+#root,
+body,
+.main {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #bbb9c8;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+.main {
+  margin: 3rem 3rem 0 3rem;
+  background-color: #f7f7f7;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  border-bottom: 2px groove;
+}
+
+.header .spacer {
+  flex: auto;
+}
+
+.header .navigation {
+  display: flex;
+}
+
+.header .navigation li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.header .navigation li a {
+  text-decoration: none;
+  color: #6c6c6c;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.header .logo img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.header .logo .logo-text {
+  font-weight: 900;
+}
+
+.homePage {
+  /* height: 100%; */
+  height: calc(100% - 2rem);
+
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+}
+
+.homePage > div {
+  flex: 1;
+}
+.homePage > .first {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homePage > div > h1 {
+  font-size: 2.5rem;
+}
+.homePage > div > h2 {
+  font-size: 5rem;
+}
+
+.homePage > .second > img {
+  background-size: contain;
+  height: 30rem;
+  width: 100%;
+}
+
+.about {
+  padding: 2rem;
+}
+
+.user-info {
+  padding: 2rem;
+  height: calc(100% - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info > div > p > span:first-child {
+  font-weight: 700;
+  display: inline-block;
+  width: 10rem;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
