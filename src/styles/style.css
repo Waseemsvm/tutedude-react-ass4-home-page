@@ -199,6 +199,17 @@ body {
   .main {
     margin: 0;
     height: 100%;
+    padding: 1rem 0.5rem;
+  }
+
+  .header .logo {
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header .navigation li {
+    margin-right: 0.75rem;
   }
 
   .user-info > div > p {
