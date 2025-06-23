@@ -213,14 +213,13 @@ body {
   }
 
   .user-info > div > p {
-    /* flex-direction: column; */
-    margin-bottom: 0.5rem;
+    align-items: center;
   }
 
   .user-info {
     padding: 2rem 0.5rem;
   }
-  
+
   .user-info > div > p > span:first-child {
     min-width: 6rem;
     width: 6rem;
